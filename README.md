@@ -64,7 +64,7 @@ A movie involves very diverse features. A correlation heat map is created to inv
 A movie is nothing without its actors. To analyze the success of a film, it is essential to look at its characters and by whom they are portrayed. The main objective of this point is to discover what are the characteristics that make an actor successful and, therefore, the film in which he participates. The character dataset allows us to study the main physical characteristics of the actors: gender, height, ethnicity, and age in which they participated in the movie. For instance, the following graph shows the distribution of ethnicities among actors and demonstrates the existence of a racial trend in the film industry
 
 <p align="center">
- <img src="./figurescharacters_ethnicities.png" alt="characters ethnicities" width=600"/>
+ <img src="./figures/characters_ethnicities.png" alt="characters ethnicities" width=600"/>
 </p>
 
 #### Step 3.3: Cross movies and characters results
