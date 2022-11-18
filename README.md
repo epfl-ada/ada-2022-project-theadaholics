@@ -27,18 +27,18 @@ Using our current and future analysis, we aim to answer the following questions:
 
 ## Proposed additional datasets and files
 
-- [IMDB top 1000 movies dataset](https://www.kaggle.com/datasets/omarhanyy/imdb-top-1000) the goal of this dataset is to obtain information on IMDB ratings of different movies, directors, and actors. 
+- [IMDB top 1000 movies dataset](https://www.kaggle.com/datasets/omarhanyy/imdb-top-1000): The goal of this dataset is to obtain information on IMDB ratings of different movies, directors, and actors. 
 - [IMDB budget](https://github.com/jeremy-lee93/dsc-mod-1-project-v2-1-onl01-dtsc-pt-052620/blob/master/IMDb_budgets.csv): The added value of this dataset is mainly the budget spent and other features which we already have to complete NaN.
 - Wikipedia pageview statistics for movies: dataset crowed from Wikipedia pageview statistics public API. `utils/extract_wikipedia_pageview_statistics.py` is the script for obtaining this dataset. Its input is a dataframe with movie names and its output is a dataframe with pageview statistics.
 
 ## Methods
 
 ### Step 1: Data loading
-movies: dataframe including information from CMU movies
-characters: dataframe including information from CMU movie characters
-imdb_top_1000: dataframe including information from top 1000 movies from IMDB
-imdb_budget: dataframe including information from 3828 IMDB movies
-wikipedia_pageviews: dataframe including information on movies’ daily average pageviews
+* `movies`: dataframe including information from CMU movies
+* `characters`: dataframe including information from CMU movie characters
+* `imdb_top_1000`: dataframe including information from top 1000 movies from IMDB
+* `imdb_budget`: dataframe including information from 3828 IMDB movies
+* `wikipedia_pageviews`: dataframe including information on movies’ daily average pageviews
 
 ### Step 2: Cleaning & Pre-processing of data
 
