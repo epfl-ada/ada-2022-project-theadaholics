@@ -71,7 +71,7 @@ A movie is nothing without its actors. To analyze the success of a film, it is e
 For the next milestone and to determine the overall success of the films, the analyses made for the films and the characters or actors that have been made independently for this installment will be cross-referenced.
 
 #### Step 3.4: Clustering movies according to plot type
-Using the processed summaries with NLP we would analyze movie plots and try to separate them into clusters (happy ending vs sad ending…) (inspiration: “The Seven Basic Plots: Why We Tell Stories”  -  Christopher Booker).
+Using the processed summaries with NLP we would analyze movie plots and try to separate them into clusters (happy ending vs sad ending…) (inspiration: “The Seven Basic Plots: Why We Tell Stories” - Christopher Booker).
 
 
 #### Step 3.5: Countries
@@ -96,20 +96,19 @@ Now we want to know if this distribution has maybe changed over time, so we sepa
 Evolution through time of movie distribution by country:
 IMAGEs
 
-We can see that the united states dominates movie production (or at least the dataset) but that indian cinema has become more important.
-
+We can see that the United States dominates movie production (or at least the dataset) but that indian cinema has become more important.
 
 ### Step 4: Try to advise choices of features for a successful movie
 
 Cluster all the above investigations across genres to advise the creation of successful movies. 
 
 ## Proposed timeline
-21.11.22 Pause project for Homework 2.
-02.12.22 Homework 2 deadline
-10.12.22 Rough draft of the datastory.
-15.12.22 Complete all code implementations and visualizations relevant to the analysis.
-20.12.22 Complete datastory.
-23.12.22 Milestone 3 deadline
+* 21.11.22 Pause project for Homework 2.
+* 02.12.22 Homework 2 deadline
+* 10.12.22 Rough draft of the datastory.
+* 15.12.22 Complete all code implementations and visualizations relevant to the analysis.
+* 20.12.22 Complete datastory.
+* 23.12.22 Milestone 3 deadline
 
 ## Organisation within the team
 
