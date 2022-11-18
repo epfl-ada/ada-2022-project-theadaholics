@@ -27,8 +27,8 @@ Using our current and future analysis, we aim to answer the following questions:
 
 ## Proposed additional datasets and files
 
-- IMDB top 1000 movies dataset: downloaded from https://www.kaggle.com/datasets/omarhanyy/imdb-top-1000 : the goal of this dataset is to obtain information on IMDB ratings of different movies, directors, and actors. 
-- IMDB budget: downloaded from https://github.com/jeremy-lee93/dsc-mod-1-project-v2-1-onl01-dtsc-pt-052620/blob/master/IMDb_budgets.csv : the added value of this dataset is mainly the budget spent and other features which we already have to complete NaN.
+- [IMDB top 1000 movies dataset](https://www.kaggle.com/datasets/omarhanyy/imdb-top-1000) the goal of this dataset is to obtain information on IMDB ratings of different movies, directors, and actors. 
+- [IMDB budget](https://github.com/jeremy-lee93/dsc-mod-1-project-v2-1-onl01-dtsc-pt-052620/blob/master/IMDb_budgets.csv): The added value of this dataset is mainly the budget spent and other features which we already have to complete NaN.
 - Wikipedia pageview statistics for movies: dataset crowed from Wikipedia pageview statistics public API. `utils/extract_wikipedia_pageview_statistics.py` is the script for obtaining this dataset. Its input is a dataframe with movie names and its output is a dataframe with pageview statistics.
 
 ## Methods
@@ -40,7 +40,7 @@ imdb_top_1000: dataframe including information from top 1000 movies from IMDB
 imdb_budget: dataframe including information from 3828 IMDB movies
 wikipedia_pageviews: dataframe including information on movies’ daily average pageviews
 
-### Step 2: Cleaning & Pre-processing of data¶
+### Step 2: Cleaning & Pre-processing of data
 
 For all datasets: Convert number to correct data types (int, float). Check outliers either by web proofing (ex: check on the internet what is the minimum length of ever-made movies) or by common sense (ex: actor height cannot be above 4m). The other outliers are filtered. Replace corrupted elements when finding data on the internet. Remove encoding if there are any in the datasets. 
 
@@ -51,7 +51,7 @@ Creation of a weighted IMDB rating to account for rating and number of votes. We
 #### Step 2.2: Characters
 The character dataset preprocessing work was aimed at finding the ethnicities of the characters/authors. The original dataset only provided freebase ids which had to be translated into “readable” ethnicity. To solve this problem, a script has been created to obtain the identifier-label equivalences from Wikidata. In addition, manual work has also been done classifying the main races. Five main groups are extracted to ease comparison: Black, Asian, Indian, Latin, and White people. All the implementation information can be found in the main file.
 
-### Step 3: Exploratory analysis:
+### Step 3: Exploratory analysis
 
 #### Step 3.1: Movies
 A movie involves very diverse features. A correlation heat map is created to investigate links between features. The focus is put on distribution and link to profitability and success on the following features: release month, genres, profit VS budget for top movies, actors, and directors.
