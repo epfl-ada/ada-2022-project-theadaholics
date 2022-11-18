@@ -76,27 +76,8 @@ Using the processed summaries with NLP we would analyze movie plots and try to s
 
 #### Step 3.5: Countries
 
-To assert how representative our dataset is of movies made in different parts of the world, we decided to plot the distribution of movies by country.
-As expected, we note that almost half the dataset is made up of american movies
-
-Top 20 countries with most movies, including USA
-
-<p align="center">
- <img src="./figures/countrieswithUS.png" alt="countriesUS" width=600"/>
-</p>
-
-Top 50 countries with the most movies, Excluding USA
-<p align="center">
- <img src="./figures/other_countries.png" alt="other countries" width=600"/>
-</p>
-
-
-Now we want to know if this distribution has maybe changed over time, so we separate the dataset approximately in two: movies made before 1985 and movies made after 1985 and we run the previous analysis on the two subsets.
-
-Evolution through time of movie distribution by country:
-IMAGEs
-
-We can see that the United States dominates movie production (or at least the dataset) but that indian cinema has become more important.
+To assert how representative our dataset is of movies made in different parts of the world, we decided to plot the distribution of movies by country. As expected, we note that almost half the dataset is made up of American movies.
+We also want to know if this distribution has maybe changed over time, so we separate the dataset approximately in two: movies made before 1985 and movies made after 1985 and we run the previous analysis on the two subsets. We can see that the United States dominates movie production (or at least the dataset) but that Indian cinema has become more and more important. We will keep looking into these relations for the next milestone.
 
 ### Step 4: Try to advise choices of features for a successful movie
 
