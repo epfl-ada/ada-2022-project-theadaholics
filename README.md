@@ -64,7 +64,7 @@ A movie involves very diverse features. A correlation heat map is created to inv
 A movie is nothing without its actors. To analyze the success of a film, it is essential to look at its characters and by whom they are portrayed. The main objective of this point is to discover what are the characteristics that make an actor successful and, therefore, the film in which he participates. The character dataset allows us to study the main physical characteristics of the actors: gender, height, ethnicity, and age in which they participated in the movie. For instance, the following graph shows the distribution of ethnicities among actors and demonstrates the existence of a racial trend in the film industry
 
 <p align="center">
- <img src="./figures/characters_ethnicities.png" alt="characters ethnicities" width=600"/>
+ <img src="./figures/characters_ethnicities.png" alt="characters ethnicities" width="600"/>
 </p>
 
 #### Step 3.3: Cross movies and characters results
@@ -100,4 +100,44 @@ Cluster all the above investigations across genres to advise the creation of suc
 | Nikolay| Clustering genres into finite categories |
 | Olivia| Find optimal budget across genres |
 | All| Creation of the git webpage and interactive plots to find “the next successful movie” |
+                                                                                        
+                                                                                        
+ # To do task Milestone 3                                                                                       
+ - Calculate a score of successfulness for actors (how many success movies they did) 
+- Score for the movie
+- Diversity score for movie + evolution in time per genre
+- Extracting typical words from plot line -> make the « word graph » for each genre
+- Creating the git hub page structure
+- Creating this select genre toolbox with subplots below
+- Creating ML model for gross revenue (selecting main features as pre-processing) 
+- network of actors graph
+- budget to spend per genre
+- Update Genre plot from milestone 2 with all genres instead of genre 1 (update for the rest of the notebook)
+
+To do for Wednesday evening :
+- Create a readMe with outline (Pau)
+- Create drawing of vizualisations for datastory (Olivia)
+- Creating the git hub page structure & subplot structure (Mehdi) 
+- Calculate a score of successfulness for actors (how many success movies they did) (Pau) 
+- Extract the main genres [Crime, Drama] (Nikolay: done) : top17
+- Diversity score for movie + evolution in time per genre (Pau) 
+- Wikipedia pages (Nikolay: done) (number of connections / months since 2015 for each movie) -> average over months in the last year and weigh by delta-year since release. 
+- Compute movies score (Olivia) 
+- Extracting typical words from plot line -> make the « word graph » for each genre (Mehdi)
+
+Success: gross revenue (80 000), profit (3000), wikipedia pageviews (80 000), rating (1000)
+
+L1 normalization: mean(l1(gross revenue), l1(wikipedia pageviews score))
+do separately first, check correlation, if strong correlation then common score, else 2 separate models. (how much money you would get, how long in time will last,  if possible: same with ratings)
+
+
+- Compute movie successful score (Perhaps 2 scores) 
+- Sort movies according to success score
+- Top 30% = successul movies 
+
+
+
+[Crime, Drama] ->>>  [Crime] [Drama]
+
+                                                                                       
 
