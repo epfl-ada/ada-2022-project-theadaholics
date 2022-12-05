@@ -36,8 +36,25 @@ def extract_wikipedia_pageview_statistics():
     results = sum(results, [])
 
     movie_wikipedia_pageviews = pd.DataFrame(results)
+    movie_wikipedia_pageviews.to_csv('./handled_data/movies_wikipedia_pageviews_raw.csv', index=False)
+
+
+def aggregate_wikipedia_pageview_statistics():
+    movie_names = pd.read_csv('./handled_data/movie_names.csv')
+    movie_wikipedia_pageviews = pd.read_csv('./handled_data/movies_wikipedia_pageviews_raw.csv')
+
+    year_min = movie_names['release_year'].min()
+    year_max = 2022
+
+    movie_wikipedia_pageviews = movie_wikipedia_pageviews[movie_wikipedia_pageviews['date'] >= 2021120100]
+    movie_wikipedia_pageviews = movie_wikipedia_pageviews \
+        .groupby(['movie_name']) \
+        .apply(lambda pv: pv['pageviews'].mean() * (1 + ((year_max - movie_names[movie_names['name'] == pv['movie_name'].iloc[0]]['release_year'].iloc[0]) / (year_max - year_min)))) \
+        .reset_index()
+
     movie_wikipedia_pageviews.to_csv('./handled_data/movies_wikipedia_pageviews.csv', index=False)
 
 
 if __name__ == '__main__':
-    extract_wikipedia_pageview_statistics()
+    # extract_wikipedia_pageview_statistics()
+    aggregate_wikipedia_pageview_statistics()
