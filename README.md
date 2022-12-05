@@ -121,7 +121,7 @@ To do for Wednesday evening :
 - Calculate a score of successfulness for actors (how many success movies they did) (Pau) 
 - Extract the main genres [Crime, Drama] (Nikolay: done) : top17
 - Diversity score for movie + evolution in time per genre (Pau) 
-- Wikipedia pages (Nikolay: done) (number of connections / months since 2015 for each movie) -> average over months in the last year and weigh by delta-year since release. 
+- Wikipedia pages (number of connections / months since 2015 for each movie) -> average over months in the last year and weigh by delta-year since release. (Nikolay: done) 
 - Compute movies score (Olivia) 
 - Extracting typical words from plot line -> make the « word graph » for each genre (Mehdi)
 
