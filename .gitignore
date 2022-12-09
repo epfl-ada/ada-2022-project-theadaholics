@@ -2,3 +2,4 @@
 .DS_Store
 corenlp_plot_summaries/
 summaries.ipynb
+data/imdb/
