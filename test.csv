@@ -1,4 +1,153 @@
 ,countries
+<<<<<<< HEAD
+United States of America,34408
+India,8411
+United Kingdom,7868
+France,4395
+Italy,3163
+Japan,2647
+Canada,2534
+Germany,2393
+Argentina,1468
+Hong Kong,1240
+Spain,1136
+Australia,1114
+South Korea,887
+Mexico,870
+Netherlands,840
+Sweden,657
+West Germany,647
+China,645
+Denmark,610
+Soviet Union,564
+Philippines,389
+Poland,382
+Czechoslovakia,376
+Belgium,360
+New Zealand,355
+Norway,345
+Russia,345
+Hungary,325
+German Democratic Republic,322
+Yugoslavia,306
+Brazil,298
+Ireland,287
+Switzerland,280
+Austria,267
+Finland,247
+Czech Republic,240
+Israel,235
+Turkey,215
+England,211
+Iran,209
+Thailand,208
+South Africa,200
+Greece,192
+Pakistan,189
+Taiwan,176
+Portugal,167
+Croatia,155
+Egypt,153
+Romania,139
+Indonesia,124
+Malaysia,106
+Bulgaria,105
+Sri Lanka,95
+Singapore,94
+Iceland,80
+Cambodia,76
+Luxembourg,75
+Bangladesh,71
+Weimar Republic,68
+Chile,60
+Serbia,57
+Morocco,55
+Cuba,51
+Colombia,51
+Scotland,45
+Algeria,43
+Nepal,43
+Tunisia,41
+Lebanon,37
+Burkina Faso,35
+Estonia,35
+Bosnia and Herzegovina,35
+Slovakia,33
+Senegal,32
+Slovenia,31
+Venezuela,30
+Puerto Rico,30
+Vietnam,29
+Albania,28
+Ukraine,26
+Korea,26
+Azerbaijan,25
+Peru,25
+Nigeria,25
+Burma,24
+Nazi Germany,23
+Democratic Republic of the Congo,21
+Republic of Macedonia,21
+Uruguay,20
+Socialist Federal Republic of Yugoslavia,19
+Serbia and Montenegro,19
+Georgia,19
+Mali,19
+Iraq,18
+Lithuania,18
+Kenya,17
+United Arab Emirates,16
+Armenia,16
+Kingdom of Great Britain,16
+Cameroon,15
+Bolivia,15
+Afghanistan,15
+Federal Republic of Yugoslavia,13
+Georgian SSR,12
+Jamaica,11
+Ethiopia,10
+Palestinian territories,10
+Mandatory Palestine,9
+Slovak Republic,9
+Uzbek SSR,8
+Wales,8
+Zimbabwe,8
+Panama,7
+Uzbekistan,7
+Costa Rica,6
+Malta,6
+Northern Ireland,5
+Montenegro,5
+Kingdom of Italy,5
+Monaco,5
+Cyprus,5
+Mongolia,5
+Congo,4
+Ukrainian SSR,4
+Guinea,4
+Libya,4
+Bahamas,4
+Haiti,4
+Kuwait,4
+Bhutan,4
+Aruba,3
+Bahrain,3
+Qatar,3
+Zambia,3
+Isle of Man,3
+Soviet occupation zone,2
+Jordan,2
+Malayalam Language,2
+Iraqi Kurdistan,1
+Turkmenistan,1
+Guinea-Bissau,1
+Crime,1
+Republic of China,1
+Macau,1
+Palestinian Territories,1
+German Language,1
+Ukranian SSR,1
+=======
 United States of America,16301
 India,5039
 United Kingdom,3204
@@ -136,3 +285,4 @@ Malayalam Language,1
 Uzbek SSR,1
 Macau,1
 Palestinian Territories,1
+>>>>>>> origin/main
