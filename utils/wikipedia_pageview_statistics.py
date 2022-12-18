@@ -11,8 +11,8 @@ import tqdm
 def get_pageview_statistics(movie_name):
     result = []
     try:
-        content = wikipedia.page(movie_name).content.lower()
-        if 'movie' in content or 'film' in content:
+        categories = ' '.join(wikipedia.page(movie_name).categories).lower()
+        if 'movie' in categories or 'film' in categories:
             query = "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/" + \
                 f"{urllib.parse.quote(movie_name.replace(' ', '_')).replace('/', '%2F')}/monthly/2015070100/2022120300"
 
@@ -61,5 +61,5 @@ def aggregate_wikipedia_pageview_statistics():
 
 
 if __name__ == '__main__':
-    # extract_wikipedia_pageview_statistics()
+    extract_wikipedia_pageview_statistics()
     aggregate_wikipedia_pageview_statistics()
