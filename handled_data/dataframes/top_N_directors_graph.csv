@@ -1,0 +1,26 @@
+,directors,Score,director_pair,Score_pair,directors0,directors1
+0,Joe Pinkerton,2.0,,,,
+1,Charles L. Gaskill,4.0,,,,
+2,Tony To,5.0,,,,
+3,Moirangthem Maniram,7.0,,,,
+4,Raul Barcelona,8.0,,,,
+5,Don DuPree,9.0,,,,
+6,Michael Gershman,10.0,,,,
+7,Fabien Pruvot,13.0,,,,
+8,Jean-Jacques Andrien,14.0,,,,
+9,Callie Crossley,15.0,"('Callie Crossley', 'Terry Kay Rockefeller')",15.0,Callie Crossley,Terry Kay Rockefeller
+10,Thomas Ott,15.0,"('Thomas Ott', 'Callie Crossley')",15.0,Thomas Ott,Callie Crossley
+11,Thomas Ott,15.0,"('Thomas Ott', 'Henry Hampton')",15.0,Thomas Ott,Henry Hampton
+12,Thomas Ott,15.0,"('Thomas Ott', 'Terry Kay Rockefeller')",15.0,Thomas Ott,Terry Kay Rockefeller
+13,Thomas Ott,15.0,"('Thomas Ott', 'Sam Pollard')",15.0,Thomas Ott,Sam Pollard
+14,Sam Pollard,15.0,"('Sam Pollard', 'Terry Kay Rockefeller')",15.0,Sam Pollard,Terry Kay Rockefeller
+15,Sam Pollard,15.0,"('Sam Pollard', 'Callie Crossley')",15.0,Sam Pollard,Callie Crossley
+16,Henry Hampton,15.0,"('Henry Hampton', 'Callie Crossley')",15.0,Henry Hampton,Callie Crossley
+17,Henry Hampton,15.0,"('Henry Hampton', 'Sam Pollard')",15.0,Henry Hampton,Sam Pollard
+18,Henry Hampton,15.0,"('Henry Hampton', 'Terry Kay Rockefeller')",15.0,Henry Hampton,Terry Kay Rockefeller
+19,Madison D. Lacy,15.0,"('Madison D. Lacy', 'Henry Hampton')",15.0,Madison D. Lacy,Henry Hampton
+20,Madison D. Lacy,15.0,"('Madison D. Lacy', 'Callie Crossley')",15.0,Madison D. Lacy,Callie Crossley
+21,Madison D. Lacy,15.0,"('Madison D. Lacy', 'Thomas Ott')",15.0,Madison D. Lacy,Thomas Ott
+22,Madison D. Lacy,15.0,"('Madison D. Lacy', 'Terry Kay Rockefeller')",15.0,Madison D. Lacy,Terry Kay Rockefeller
+23,Madison D. Lacy,15.0,"('Madison D. Lacy', 'Sam Pollard')",15.0,Madison D. Lacy,Sam Pollard
+24,Terry Kay Rockefeller,15.0,,,,
