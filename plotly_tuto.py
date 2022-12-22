@@ -19,13 +19,14 @@ df = pd.DataFrame({
     "City": ["SF", "SF", "SF", "Montreal", "Montreal", "Montreal"]
 })
 
-# fig = px.bar(df, x="Fruit", y="Amount", color="City", barmode="group")
+fig = px.bar(df, x="Fruit", y="Amount", color="City", barmode="group")
 
-# fig.update_layout(
-#     plot_bgcolor=colors['background'],
-#     paper_bgcolor=colors['background'],
-#     font_color=colors['text']
-# )
+fig.update_layout(
+    plot_bgcolor=colors['background'],
+    paper_bgcolor=colors['background'],
+    font_color=colors['text']
+)
+fig.write_html("file.html")
 
 # 'backgroundColor': colors['background'],
 app.layout = html.Div(style={ 'display': 'flex', 'flex-direction': 'row'}, children=[
@@ -70,11 +71,13 @@ def update_figure(selected_city):
     fig = px.bar(filtered_df, x="Fruit", y="Amount", color="City", barmode="group")
 
     fig.update_layout(transition_duration=500)
+    
     print(filtered_df)
     return fig
 
 if __name__ == '__main__':
     app.run_server(debug=True)
+    
 
 
 
