@@ -4,3 +4,4 @@ corenlp_plot_summaries/
 summaries.ipynb
 data/imdb/
 handled_data/movies_wikipedia_pageviews_raw.csv
+__pycache__/
