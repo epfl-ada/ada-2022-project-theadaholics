@@ -98,7 +98,7 @@ Four models are responsible for predicting the success of a hypothetical movie. 
 | Pau | Creation of the ethnicity and genre evolution plots. Creation of the website structure. |
 | Mehdi | Investigate word bank and sentiment analysis in plot lines across genres |
 | Nikolay| Adding new data used for movie score. Creation of actors, director, genre scores. Creation of a machine learning model for predicting movie success and regression analysis models. Best release months graphs. |
-| Olivia| Creation of movie, actors, director, genre scores. Creation of bubble graph for reprensentation. Interactive plots on webpage. Creation of text for website. |                                                                                      
+| Olivia| Creation of movie, actors, director, genre scores. Creation of bubble graph for representation. Interactive plots on webpage. Creation of text for website. |                                                                                      
                                                                                         
 
                                                                                        
