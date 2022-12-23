@@ -5,12 +5,12 @@
 - [Proposed additional datasets and files](#proposed-additional-datasets-and-files)
 - [Methods](#methods)
 - [Proposed timeline](#proposed-timeline)
-- [Organisation within the team](#organisation-within-the-team)
+- [Organization within the team](#organisation-within-the-team)
 - [Questions for the TAs](#questions-for-the-tas)
 
 ## Abstract
 
-What makes a movie successful? While this question may seem like a low-hanging fruit, it requires a very holistic approach. A good film should not only make use of the 7th Art but of all seven Arts. A movie implies many choices: what genres to focus on, which director and actors bring the most added value, what budget to spend? With such a big movie database, we can expect to find some patterns for which those choices lead to more successful movies. But then again, what makes a movie successful? From profitability to perenniality, we shall investigate different success indicators. The ideal goal for our data story would be to draw a generator for the next successful movie: a user can select a genre of interest and we suggest the ideal combo of actors, director, budget, diversity, etc. Additionally, a linear regression is trained such as to forecast, based on those chosen features, the success of the movie (Score, Gross revenue, pageviews, rating).
+What makes a movie successful? While this question may seem like a low-hanging fruit, it requires a very holistic approach. A good film should not only make use of the 7th Art but of all seven Arts. A movie implies many choices: what genres to focus on, which director and actors bring the most added value, what budget to spend? With such a big movie database, we can expect to find some patterns for which those choices lead to more successful movies. But then again, what makes a movie successful? From profitability to perenniality, we shall investigate different success indicators. The ideal goal for our data story would be to draw a generator for the next successful movie: a user can select a genre of interest and we suggest the ideal combo of actors, director, budget, diversity, etc. Additionally, linear regression is trained such as to forecast, based on those chosen features, the success of the movie (Score, Gross revenue, pageviews, rating).
 
 ## Research Questions
 
@@ -18,18 +18,17 @@ Using our current and future analysis, we aim to answer the following questions:
 
 - What budget should be invested for a successful film? 
 - Which actors and directors bring the most added value to a movie?
-- What combinations of genre is most successful?
+- What combinations of the genre are most successful?
 - What release months are most profitable? 
 - What is the diversity (race & genre) in movie production? Is this evolving with time?
-- What main themes come out of plots?
-- Are happy endings/beginnings better or worse that sad endings/beginnings?
+- What main themes come out of the plots?
+- Are happy endings/beginnings better or worse than sad endings/beginnings?
 
 ## Proposed additional datasets and files
 
-- [IMDB official dataset](https://www.imdb.com/interfaces/): The goal of this dataset is to obtain information on IMDB ratings, directors, and missing information of different movies.
-- [IMDB budget](https://github.com/jeremy-lee93/dsc-mod-1-project-v2-1-onl01-dtsc-pt-052620/blob/master/IMDb_budgets.csv): The added value of this dataset is mainly the budget spent and other features which we already have to complete NaN.
+- [IMDB official dataset](https://www.imdb.com/interfaces/): The goal of this dataset is to obtain information on IMDB ratings, directors, and missing information on different movies.
+- [IMDB budget](https://github.com/jeremy-lee93/dsc-mod-1-project-v2-1-onl01-dtsc-pt-052620/blob/master/IMDb_budgets.csv): The added value of this dataset is mainly the budget spent and other features that we already have to complete NaN.
 - Wikipedia pageview statistics for movies: dataset crowed from Wikipedia pageview statistics public API. `utils/extract_wikipedia_pageview_statistics.py` is the script for obtaining this dataset. Its input is a dataframe with movie names and its output is a dataframe with pageview statistics.
-- ADD NIKOLAY DATASET
 
 ## Methods
 
@@ -55,8 +54,8 @@ The character dataset preprocessing work was aimed at finding the ethnicities of
 ### Step 3: Exploratory analysis
 
 #### Step 3.1: Movies
-A movie involves very diverse features. A correlation heat map is created to investigate links between features. The focus is put on distribution and link to profitability and success on the following features: release month, genres, profit VS budget for top movies, actors, and directors. With multiple features, a single success score based on the four following success features: Wikipedia pageviews, IMDB weighted ratings, gross revenue, profit. 
-From there, we proceed with the creation of a weighted score for features such as actors, directors, genres, based on the movie score and the number of movies in which individuals of features appear. The same thing is done for actor, director, genre collaborations. We also look into which is the best period to release a movie by comparing accoss months the gross revenue.
+A movie involves very diverse features. A correlation heat map is created to investigate links between features. The focus is put on distribution and link to profitability and success on the following features: release month, genres, profit VS budget for top movies, actors, and directors. With multiple features, a single success score is based on the four following success features: Wikipedia pageviews, IMDB weighted ratings, gross revenue, and profit. 
+From there, we proceed with the creation of a weighted score for features such as actors, directors, and genres, based on the movie score and the number of movies in which individuals of features appear. The same thing is done for actor, director, and genre collaborations. We also look into which is the best period to release a movie by comparing across months the gross revenue.
 
 <p align="center">
   <img src="./figures/success_month.png" alt="success month" width="600"/>
@@ -70,7 +69,7 @@ A movie is nothing without its actors. To analyze the success of a film, it is e
 </p>
 
 MEHDI UPDATE BELOW
-#### Step 3.3: Cross movies and characters results
+#### Step 3.3: Cross movies and characters' results
 For the next milestone and to determine the overall success of the films, the analyses made for the films and the characters or actors that have been made independently for this installment will be cross-referenced.
 
 #### Step 3.4: Clustering movies according to plot type
@@ -84,21 +83,21 @@ We also want to know if this distribution has maybe changed over time, so we sep
 
 ### Step 4: Try to advise choices of features for a successful movie
 
-We cluster all the above investigations across genres to advise the creation of successful movies. The representation of best actors, directors and genres is done through network graphs which size of node is proportional to the success of the individual and which edge, if exists, symbolises the added value of a collaboration between two individuals. 
+We cluster all the above investigations across genres to advise the creation of successful movies. The representation of best actors, directors and genres is done through network graphs in which the size of the node is proportional to the success of the individual and which edge if exists, symbolizes the added value of a collaboration between two individuals.
 
 ### ADD COMMENT ON WORD PLOT (MEHDI)
 
-A neural network is trained to be able to forecast the success (pageviews, revenue, profit, rating) of a movie. Due to low accuracy, we ended up turning to a linear regression model to allow this forecast. 
-### COMPLETE BY nichoLAY
+### Step 5: Forecasting movie success
 
+Four models are responsible for predicting the success of a hypothetical movie. Success predictions are Score (combination of IMDb ratings, Wikipedia pageviews, total gross revenue, and profit), Wikipedia Pageviews, Total Gross Revenue, and IMDb rating (one model per metric). These predictions are based on these features - Runtime, Is Adult, Actor Score, Director Score, Genre, Language, Country, and Release Month. In addition, you can see how your hypothetical movie is going to perform based on all the movies part of the CMU Movie Summary Corpus. In the process of finding the best model were tried Fully-Connected Neuron Network, Linear Regression, and Random Forest. The best result was obtained by Linear Regression.
 
-## Organisation within the team
+## Organization within the team
 
 | Teammate| Task |
 | --- | --- |
 | Pau | Creation of the ethnicity and genre evolution plots. Creation of the website structure. |
 | Mehdi | Investigate word bank and sentiment analysis in plot lines across genres |
-| Nikolay| Creation of a neural network and regression analysis models. Best release months graphs. |
+| Nikolay| Adding new data used for movie score. Creation of actors, director, genre scores. Creation of a machine learning model for predicting movie success and regression analysis models. Best release months graphs. |
 | Olivia| Creation of movie, actors, director, genre scores. Creation of bubble graph for reprensentation. Interactive plots on webpage. Creation of text for website. |                                                                                      
                                                                                         
 
