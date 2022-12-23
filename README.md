@@ -72,18 +72,16 @@ A movie is nothing without its actors. To analyze the success of a film, it is e
  <img src="./figures/characters_ethnicities.png" alt="characters ethnicities" width="600"/>
 </p>
 
-MEHDI UPDATE BELOW
-#### Step 3.3: Cross movies and characters' results
-For the next milestone and to determine the overall success of the films, the analyses made for the films and the characters or actors that have been made independently for this installment will be cross-referenced.
+#### Step 3.3: Wordclouds
+A word cloud is a very easy way to quickly grasp the key topics around which revolves a text corpus. In our analysis, we use this technique to visualize  the main themes addressed by  a particular movie genre. We do this first with a random sample from all the movies in that genre, then we draw a sample from a subset made of the most successful movies in the same genre.
 
-#### Step 3.4: Clustering movies according to plot type
-Using the processed summaries with NLP we would analyze movie plots and try to separate them into clusters (happy ending vs sad ending…) (inspiration: “The Seven Basic Plots: Why We Tell Stories” - Christopher Booker).
+#### Step 3.4: Sentiment analysis on beginning and ending of movie
+Using the processed summaries with NLP we analyze movie plots and try to separate them into clusters (happy ending vs sad ending…), and investigate the effect this has on movie popularity. (inspiration: “The Seven Basic Plots: Why We Tell Stories” - Christopher Booker).
 
+<p align="center">
+ <img src="plotly/HorrorVsRomance.png" alt="sentiment" width="1000"/>
+</p>
 
-#### Step 3.5: Countries
-
-To assert how representative our dataset is of movies made in different parts of the world, we decided to plot the distribution of movies by country. As expected, we note that almost half the dataset is made up of American movies.
-We also want to know if this distribution has maybe changed over time, so we separate the dataset approximately in two: movies made before 1985 and movies made after 1985 and we run the previous analysis on the two subsets. We can see that the United States dominates movie production (or at least the dataset) but that Indian cinema has become more and more important.
 
 ### Step 4: Try to advise choices of features for a successful movie
 
