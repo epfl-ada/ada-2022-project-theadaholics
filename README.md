@@ -42,7 +42,7 @@ Using our current and future analysis, we aim to answer the following questions:
 * `imdb`: dataframe including information for all movies present in IMDB
 * `imdb_budget`: dataframe including information from 3828 IMDB movies
 * `wikipedia_pageviews`: dataframe including information on movies’ weighted average pageviews for the last year
-
+* `summaries_df`: dataframe containing all the plot summaries
 ### Step 2: Cleaning & Pre-processing of data
 
 For all datasets: Convert number to correct data types (int, float). Check outliers either by web proofing (ex: check on the internet what is the minimum length of ever-made movies) or by common sense (ex: actor height cannot be above 4m). The other outliers are filtered. Replace corrupted elements when finding data on the internet. Remove encoding if there are any in the datasets. 
