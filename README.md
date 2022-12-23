@@ -35,7 +35,7 @@ Using our current and future analysis, we aim to answer the following questions:
 - Wikipedia pageview statistics for movies: dataset crowed from Wikipedia pageview statistics public API. `utils/extract_wikipedia_pageview_statistics.py` is the script for obtaining this dataset. Its input is a dataframe with movie names and its output is a dataframe with pageview statistics.
 
 ## Methods
-
+#### Note: The analysis is divided into 2 notebooks, main.ipynb for numerical data and summaries.ipynb for textual data.
 ### Step 1: Data loading
 * `movies`: dataframe including information from CMU movies
 * `characters`: dataframe including information from CMU movie characters
