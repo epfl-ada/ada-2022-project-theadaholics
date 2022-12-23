@@ -10,7 +10,7 @@
 
 ## Abstract
 
-What makes a movie successful? While this question may seem like a low-hanging fruit, it requires a very holistic approach. A good film should not only make use of the 7th Art but of all seven Arts. A movie implies many choices: what genres to focus on, which director and actors bring the most added value, what budget to spend? With such a big movie database, we can expect to find some patterns for which those choices lead to more successful movies. But then again, what makes a movie successful? From profitability to perenniality, we shall investigate different success indicators. Ideally, the goal for our data story would be to draw a generator for the next successful movie: a user would select for instance a genre of interest and we would suggest the ideal combo of actors, director, budget, diversity, etc.
+What makes a movie successful? While this question may seem like a low-hanging fruit, it requires a very holistic approach. A good film should not only make use of the 7th Art but of all seven Arts. A movie implies many choices: what genres to focus on, which director and actors bring the most added value, what budget to spend? With such a big movie database, we can expect to find some patterns for which those choices lead to more successful movies. But then again, what makes a movie successful? From profitability to perenniality, we shall investigate different success indicators. The ideal goal for our data story would be to draw a generator for the next successful movie: a user can select a genre of interest and we suggest the ideal combo of actors, director, budget, diversity, etc. Additionally, a linear regression is trained such as to forecast, based on those chosen features, the success of the movie (Score, Gross revenue, pageviews, rating).
 
 ## Research Questions
 
@@ -18,18 +18,18 @@ Using our current and future analysis, we aim to answer the following questions:
 
 - What budget should be invested for a successful film? 
 - Which actors and directors bring the most added value to a movie?
-- Investigate the correlation between the choice of genres and movie profitability. What genres are the most profitable?
-- What is the link between an actor's success and his/her physical features (gender, age, height, ethnicity)
+- What combinations of genre is most successful?
 - What release months are most profitable? 
-- What countries release the most profitable winning movie? Is this evolving with time? 
-- What types of roles will be suitable for which actors?
-- What are the best plot lines? (NLP, if possible)
+- What is the diversity (race & genre) in movie production? Is this evolving with time?
+- What main themes come out of plots?
+- Are happy endings/beginnings better or worse that sad endings/beginnings?
 
 ## Proposed additional datasets and files
 
 - [IMDB official dataset](https://www.imdb.com/interfaces/): The goal of this dataset is to obtain information on IMDB ratings, directors, and missing information of different movies.
 - [IMDB budget](https://github.com/jeremy-lee93/dsc-mod-1-project-v2-1-onl01-dtsc-pt-052620/blob/master/IMDb_budgets.csv): The added value of this dataset is mainly the budget spent and other features which we already have to complete NaN.
 - Wikipedia pageview statistics for movies: dataset crowed from Wikipedia pageview statistics public API. `utils/extract_wikipedia_pageview_statistics.py` is the script for obtaining this dataset. Its input is a dataframe with movie names and its output is a dataframe with pageview statistics.
+ADD NIKOLAY DATASET
 
 ## Methods
 
@@ -47,6 +47,8 @@ For all datasets: Convert number to correct data types (int, float). Check outli
 #### Step 2.1: Movies
 
 Creation of a weighted IMDB rating to account for rating and number of votes. We also account for inflation rates to modify all revenue, profit, and budget with the US inflation rate since 1913.  Proceed with left merge based on datasets movies, imdb, imdb_budget, wikipedia_pageviews. The goal of this left merge to the original dataset is to combine common features while conserving the original dataset length to still be able to investigate the data fully. The redundant columns between datasets are used to fill in missing values to have a more complete dataset.
+
+Creation of a weighted score for features such as actors, directors, genres, based on the movie weighted score and the number of movies in which individual of features appear. The same thing is done for actor, director, genre collaborations. 
 
 #### Step 2.2: Characters
 The character dataset preprocessing work was aimed at finding the ethnicities of the characters/authors. The original dataset only provided freebase ids which had to be translated into “readable” ethnicity. To solve this problem, a script has been created to obtain the identifier-label equivalences from Wikidata. In addition, manual work has also been done classifying the main races. Five main groups are extracted to ease comparison: Black, Asian, Indian, Latin, and White people. All the implementation information can be found in the main file.
