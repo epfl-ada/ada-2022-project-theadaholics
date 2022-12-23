@@ -73,9 +73,9 @@ A movie is nothing without its actors. To analyze the success of a film, it is e
 </p>
 
 #### Step 3.3: Wordclouds
-A word cloud is a very easy way to quickly grasp the key topics around which revolves a text corpus. In our analysis, we use this technique to visualize  the main themes addressed by  a particular movie genre. We do this first with a random sample from all the movies in that genre, then we draw a sample from a subset made of the most successful movies in the same genre.
+A word cloud is a very easy way to quickly grasp the key topics around which revolves a text corpus. In our analysis, we use this technique to visualize the main themes addressed by a particular movie genre. We do this first with a random sample from all the movies in that genre, then we draw a sample from a subset made of the most successful movies in the same genre.
 
-#### Step 3.4: Sentiment analysis on beginning and ending of movie
+#### Step 3.4: Sentiment analysis on the beginning and ending of a movie
 Using the processed summaries with NLP we analyze movie plots and try to separate them into clusters (happy ending vs sad ending…), and investigate the effect this has on movie popularity. (inspiration: “The Seven Basic Plots: Why We Tell Stories” - Christopher Booker).
 
 <p align="center">
