@@ -27,7 +27,7 @@ Using our current and future analysis, we aim to answer the following questions:
 
 ## Proposed additional datasets and files
 
-- [IMDB top 1000 movies dataset](https://www.kaggle.com/datasets/omarhanyy/imdb-top-1000): The goal of this dataset is to obtain information on IMDB ratings of different movies, directors, and actors. 
+- [IMDB official dataset](https://www.imdb.com/interfaces/): The goal of this dataset is to obtain information on IMDB ratings, directors, and missing information of different movies.
 - [IMDB budget](https://github.com/jeremy-lee93/dsc-mod-1-project-v2-1-onl01-dtsc-pt-052620/blob/master/IMDb_budgets.csv): The added value of this dataset is mainly the budget spent and other features which we already have to complete NaN.
 - Wikipedia pageview statistics for movies: dataset crowed from Wikipedia pageview statistics public API. `utils/extract_wikipedia_pageview_statistics.py` is the script for obtaining this dataset. Its input is a dataframe with movie names and its output is a dataframe with pageview statistics.
 
@@ -36,9 +36,9 @@ Using our current and future analysis, we aim to answer the following questions:
 ### Step 1: Data loading
 * `movies`: dataframe including information from CMU movies
 * `characters`: dataframe including information from CMU movie characters
-* `imdb_top_1000`: dataframe including information from top 1000 movies from IMDB
+* `imdb`: dataframe including information for all movies present in IMDB
 * `imdb_budget`: dataframe including information from 3828 IMDB movies
-* `wikipedia_pageviews`: dataframe including information on movies’ daily average pageviews
+* `wikipedia_pageviews`: dataframe including information on movies’ weighted average pageviews for the last year
 
 ### Step 2: Cleaning & Pre-processing of data
 
@@ -46,7 +46,7 @@ For all datasets: Convert number to correct data types (int, float). Check outli
 
 #### Step 2.1: Movies
 
-Creation of a weighted IMDB rating to account for rating and number of votes. We also account for inflation rates to modify all revenue, profit, and budget with the US inflation rate since 1913.  Proceed with outer merge based on datasets movies, imdb_top_1000, imdb_budget, wikipedia_pageviews. The goal of this outer merge is to combine common features while conserving the original dataset length to still be able to investigate the data fully. The redundant columns between datasets are used to fill in missing values to have a more complete dataset. 
+Creation of a weighted IMDB rating to account for rating and number of votes. We also account for inflation rates to modify all revenue, profit, and budget with the US inflation rate since 1913.  Proceed with left merge based on datasets movies, imdb, imdb_budget, wikipedia_pageviews. The goal of this left merge to the original dataset is to combine common features while conserving the original dataset length to still be able to investigate the data fully. The redundant columns between datasets are used to fill in missing values to have a more complete dataset.
 
 #### Step 2.2: Characters
 The character dataset preprocessing work was aimed at finding the ethnicities of the characters/authors. The original dataset only provided freebase ids which had to be translated into “readable” ethnicity. To solve this problem, a script has been created to obtain the identifier-label equivalences from Wikidata. In addition, manual work has also been done classifying the main races. Five main groups are extracted to ease comparison: Black, Asian, Indian, Latin, and White people. All the implementation information can be found in the main file.
