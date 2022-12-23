@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="576pt" height="576pt" viewBox="0 0 576 576" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="568.8pt" height="583.918125pt" viewBox="0 0 568.8 583.918125" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -21,9 +21,9 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 576 
-L 576 576 
-L 576 0 
+   <path d="M 0 583.918125 
+L 568.8 583.918125 
+L 568.8 0 
 L 0 0 
 z
 " style="fill: #ffffff"/>

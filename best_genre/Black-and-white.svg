@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
@@ -632,6 +633,27 @@ Q 2509 4147 2053 4147
 L 1259 4147 
 z
 " transform="scale(0.015625)"/>
+       <path id="DejaVuSans-6f" d="M 1959 3097 
+Q 1497 3097 1228 2736 
+Q 959 2375 959 1747 
+Q 959 1119 1226 758 
+Q 1494 397 1959 397 
+Q 2419 397 2687 759 
+Q 2956 1122 2956 1747 
+Q 2956 2369 2687 2733 
+Q 2419 3097 1959 3097 
+z
+M 1959 3584 
+Q 2709 3584 3137 3096 
+Q 3566 2609 3566 1747 
+Q 3566 888 3137 398 
+Q 2709 -91 1959 -91 
+Q 1206 -91 779 398 
+Q 353 888 353 1747 
+Q 353 2609 779 3096 
+Q 1206 3584 1959 3584 
+z
+" transform="scale(0.015625)"/>
        <path id="DejaVuSans-20" transform="scale(0.015625)"/>
        <path id="DejaVuSans-46" d="M 628 4666 
 L 3309 4666 
@@ -718,6 +740,29 @@ L 697 3744
 Q 697 4328 969 4595 
 Q 1241 4863 1831 4863 
 L 2375 4863 
+z
+" transform="scale(0.015625)"/>
+      </defs>
+      <use xlink:href="#DejaVuSans-57"/>
+      <use xlink:href="#DejaVuSans-61" x="92.501953"/>
+      <use xlink:href="#DejaVuSans-72" x="153.78125"/>
+      <use xlink:href="#DejaVuSans-20" x="194.894531"/>
+      <use xlink:href="#DejaVuSans-66" x="226.681641"/>
+      <use xlink:href="#DejaVuSans-69" x="261.886719"/>
+      <use xlink:href="#DejaVuSans-6c" x="289.669922"/>
+      <use xlink:href="#DejaVuSans-6d" x="317.453125"/>
+     </g>
+    </g>
+   </g>
+   <g id="text_7">
+    <!-- Impactful genre combination for Black-and-white genre - Importance rank: 3 -->
+    <g transform="translate(54.659062 16.318125)scale(0.12 -0.12)">
+     <defs>
+      <path id="DejaVuSans-49" d="M 628 4666 
+L 1259 4666 
+L 1259 0 
+L 628 0 
+L 628 4666 
 z
 " transform="scale(0.015625)"/>
       <path id="DejaVuSans-75" d="M 544 1381 

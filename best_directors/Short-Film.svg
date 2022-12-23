@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="576pt" height="576pt" viewBox="0 0 576 576" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="568.8pt" height="583.918125pt" viewBox="0 0 568.8 583.918125" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -21,9 +21,9 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 576 
-L 576 576 
-L 576 0 
+   <path d="M 0 583.918125 
+L 568.8 583.918125 
+L 568.8 0 
 L 0 0 
 z
 " style="fill: #ffffff"/>
@@ -455,34 +455,20 @@ z
      <!-- Friz Freleng -->
      <g transform="translate(439.240884 210.604684)scale(0.09 -0.09)">
       <defs>
-       <path id="DejaVuSans-46" d="M 628 4666 
-L 3309 4666 
-L 3309 4134 
-L 1259 4134 
-L 1259 2759 
-L 3109 2759 
-L 3109 2228 
-L 1259 2228 
-L 1259 0 
-L 628 0 
-L 628 4666 
-z
-" transform="scale(0.015625)"/>
-       <path id="DejaVuSans-72" d="M 2631 2963 
-Q 2534 3019 2420 3045 
-Q 2306 3072 2169 3072 
-Q 1681 3072 1420 2755 
-Q 1159 2438 1159 1844 
-L 1159 0 
-L 581 0 
-L 581 3500 
-L 1159 3500 
-L 1159 2956 
-Q 1341 3275 1631 3429 
-Q 1922 3584 2338 3584 
-Q 2397 3584 2469 3576 
-Q 2541 3569 2628 3553 
-L 2631 2963 
+       <path id="DejaVuSans-57" d="M 213 4666 
+L 850 4666 
+L 1831 722 
+L 2809 4666 
+L 3519 4666 
+L 4500 722 
+L 5478 4666 
+L 6119 4666 
+L 4947 0 
+L 4153 0 
+L 3169 4050 
+L 2175 0 
+L 1381 0 
+L 213 4666 
 z
 " transform="scale(0.015625)"/>
        <path id="DejaVuSans-69" d="M 603 3500 
@@ -496,19 +482,6 @@ L 1178 4863
 L 1178 4134 
 L 603 4134 
 L 603 4863 
-z
-" transform="scale(0.015625)"/>
-       <path id="DejaVuSans-7a" d="M 353 3500 
-L 3084 3500 
-L 3084 2975 
-L 922 459 
-L 3084 459 
-L 3084 0 
-L 275 0 
-L 275 525 
-L 2438 3041 
-L 353 3041 
-L 353 3500 
 z
 " transform="scale(0.015625)"/>
        <path id="DejaVuSans-6c" d="M 603 4863 
@@ -878,6 +851,23 @@ Q 3938 681 3513 340
 Q 3088 0 2303 0 
 L 628 0 
 L 628 4666 
+z
+" transform="scale(0.015625)"/>
+       <path id="DejaVuSans-72" d="M 2631 2963 
+Q 2534 3019 2420 3045 
+Q 2306 3072 2169 3072 
+Q 1681 3072 1420 2755 
+Q 1159 2438 1159 1844 
+L 1159 0 
+L 581 0 
+L 581 3500 
+L 1159 3500 
+L 1159 2956 
+Q 1341 3275 1631 3429 
+Q 1922 3584 2338 3584 
+Q 2397 3584 2469 3576 
+Q 2541 3569 2628 3553 
+L 2631 2963 
 z
 " transform="scale(0.015625)"/>
        <path id="DejaVuSans-62" d="M 3116 1747 
