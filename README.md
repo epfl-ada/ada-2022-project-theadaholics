@@ -1,4 +1,8 @@
 # What makes a movie successful?
+
+## Link to data story: 
+https://pauromeu.github.io/TheADAholics-web/
+
 ## Table of contents
 - [Abstract](#abstract)
 - [Research Questions](#research-questions)
