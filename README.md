@@ -87,7 +87,6 @@ Using the processed summaries with NLP we analyze movie plots and try to separat
 
 We cluster all the above investigations across genres to advise the creation of successful movies. The representation of best actors, directors and genres is done through network graphs in which the size of the node is proportional to the success of the individual and which edge if exists, symbolizes the added value of a collaboration between two individuals.
 
-### ADD COMMENT ON WORD PLOT (MEHDI)
 
 ### Step 5: Forecasting movie success
 
