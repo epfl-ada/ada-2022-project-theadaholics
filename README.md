@@ -79,7 +79,7 @@ A word cloud is a very easy way to quickly grasp the key topics around which rev
 Using the processed summaries with NLP we analyze movie plots and try to separate them into clusters (happy ending vs sad ending…), and investigate the effect this has on movie popularity. (inspiration: “The Seven Basic Plots: Why We Tell Stories” - Christopher Booker).
 
 <p align="center">
- <img src="plotly/HorrorVsRomance.png" alt="sentiment" width="1000"/>
+ <img src="figures/plotly/HorrorVsRomance.png" alt="sentiment" width="1000"/>
 </p>
 
 
